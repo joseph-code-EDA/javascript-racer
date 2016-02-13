@@ -1,0 +1,75 @@
+body {
+  background-image: url(images/raceBG2.png);
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+  background-position: 0px 150px;
+  background-height: 100px;
+  background-color: black;
+  text-align: center;
+}
+.player {
+  display: block;
+  margin-bottom: 20px;
+}
+ 
+#p1 {
+  padding-top: 100px;
+}
+
+#title img {
+  padding-top: 50px;
+  z-index: 9999;
+}
+#logo img {
+  z-index: -1000;
+}
+/* COLUMN SETUP */
+#menuControls {
+  display: flex;
+}
+.column {
+  flex: 1;
+}
+column-one {
+    order: 1;
+}
+.column-two {
+    order: 2;
+}
+.column-three {
+    order: 3;
+}
+
+/* MENU CONTROLS */
+.container #menuControls {
+  margin-top: 60px;
+}
+#menuControls {
+  color: white;
+  font-family: "Press Start 2P";
+  border: 3px solid red;
+  width: 900px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+#musicButton {
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+#winner{
+  display: none;
+  background-color: black;
+  color: white;
+  font-family: "Press Start 2P";
+  border: 3px solid red;
+  border-radius: 25px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  left: 25%;
+  top: 200px;
+}

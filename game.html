@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSR</title>
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+  <div id="wrapper" id="playArea">
+    <div class="container">
+
+      <div class="row">
+        <div class="twelve columns" id="title">
+          <img src="images/img1.png" width="350">
+        </div> 
+      </div>
+
+      <div>
+        <img id="p1" class="player" src="images/p1CarRed-200.png" alt="Racer 1 " style="width:90px; height:auto; margin-left: 4%">
+        <img id="p2" class="player" src="images/p2CarPurple-200.png" alt="Racer 2 " style="width:100px; height:auto; margin-left: 2%">
+      </div>
+
+      <div id="winner" style="display:none">
+        <h3 class="playerWhoWon"></h3>
+      </div>
+
+      <div class="container" id="menuControls">
+        <div class="column column-one">
+          <p>Player 1 : A<br><br>Player 2 : L</p>
+        </div>
+        <div class="column column-two">
+          <p>Reset : R<br><br>Exit : X</p>
+        </div>
+        <div class="column column-three">
+          <p>Music   <input type="button" value="LOUD" id ="musicButton" onclick="toggle(this)"/><br><br>Start Chime : S</p>
+        </div>      
+      </div>
+  </div>
+      <audio id="raceMusic" src="audio/race.mp3" autoplay loop ></audio> 
+      <audio id="raceChime" src="audio/starter.mp3" ></audio>       
+      <audio id="p1Rev" src="audio/p1Rev.mp3" ></audio> 
+      <audio id="p2Rev" src="audio/p2Rev.mp3" ></audio> 
+
+      <script src="game.js"></script>
+      <script src="audio/audio.min.js"></script>
+
+    
+  </div>
+
+</body>
+</html>
